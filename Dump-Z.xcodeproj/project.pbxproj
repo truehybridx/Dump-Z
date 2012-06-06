@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF13BB4B157EB63A002C1D9E /* class-dump-z in Resources */ = {isa = PBXBuildFile; fileRef = DF13BB4A157EB63A002C1D9E /* class-dump-z */; };
+		DFB17EA0157D26C5009FF81B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB17E9F157D26C5009FF81B /* Cocoa.framework */; };
+		DFB17EAA157D26C5009FF81B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB17EA8157D26C5009FF81B /* InfoPlist.strings */; };
+		DFB17EAC157D26C5009FF81B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB17EAB157D26C5009FF81B /* main.m */; };
+		DFB17EB0157D26C5009FF81B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DFB17EAE157D26C5009FF81B /* Credits.rtf */; };
+		DFB17EB3157D26C5009FF81B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB17EB2157D26C5009FF81B /* AppDelegate.m */; };
+		DFB17EB6157D26C5009FF81B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB17EB4157D26C5009FF81B /* MainMenu.xib */; };
+		DFE503A5157D349000C2E055 /* BEDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE503A4157D349000C2E055 /* BEDropView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF13BB4A157EB63A002C1D9E /* class-dump-z */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "class-dump-z"; sourceTree = "<group>"; };
+		DFB17E9B157D26C5009FF81B /* Dump-Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dump-Z.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB17E9F157D26C5009FF81B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DFB17EA2157D26C5009FF81B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DFB17EA3157D26C5009FF81B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DFB17EA4157D26C5009FF81B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFB17EA7157D26C5009FF81B /* Dump-Z-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dump-Z-Info.plist"; sourceTree = "<group>"; };
+		DFB17EA9157D26C5009FF81B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFB17EAB157D26C5009FF81B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFB17EAD157D26C5009FF81B /* Dump-Z-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dump-Z-Prefix.pch"; sourceTree = "<group>"; };
+		DFB17EAF157D26C5009FF81B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DFB17EB1157D26C5009FF81B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFB17EB2157D26C5009FF81B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFB17EB5157D26C5009FF81B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DFE503A3157D349000C2E055 /* BEDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEDropView.h; sourceTree = "<group>"; };
+		DFE503A4157D349000C2E055 /* BEDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEDropView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFB17E98157D26C5009FF81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB17EA0157D26C5009FF81B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFB17E90157D26C5009FF81B = {
+			isa = PBXGroup;
+			children = (
+				DFB17EA5157D26C5009FF81B /* Dump-Z */,
+				DFB17E9E157D26C5009FF81B /* Frameworks */,
+				DFB17E9C157D26C5009FF81B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFB17E9C157D26C5009FF81B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB17E9B157D26C5009FF81B /* Dump-Z.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFB17E9E157D26C5009FF81B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB17E9F157D26C5009FF81B /* Cocoa.framework */,
+				DFB17EA1157D26C5009FF81B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFB17EA1157D26C5009FF81B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB17EA2157D26C5009FF81B /* AppKit.framework */,
+				DFB17EA3157D26C5009FF81B /* CoreData.framework */,
+				DFB17EA4157D26C5009FF81B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DFB17EA5157D26C5009FF81B /* Dump-Z */ = {
+			isa = PBXGroup;
+			children = (
+				DF13BB4A157EB63A002C1D9E /* class-dump-z */,
+				DFB17EB1157D26C5009FF81B /* AppDelegate.h */,
+				DFB17EB2157D26C5009FF81B /* AppDelegate.m */,
+				DFB17EB4157D26C5009FF81B /* MainMenu.xib */,
+				DFE503A3157D349000C2E055 /* BEDropView.h */,
+				DFE503A4157D349000C2E055 /* BEDropView.m */,
+				DFB17EA6157D26C5009FF81B /* Supporting Files */,
+			);
+			path = "Dump-Z";
+			sourceTree = "<group>";
+		};
+		DFB17EA6157D26C5009FF81B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB17EA7157D26C5009FF81B /* Dump-Z-Info.plist */,
+				DFB17EA8157D26C5009FF81B /* InfoPlist.strings */,
+				DFB17EAB157D26C5009FF81B /* main.m */,
+				DFB17EAD157D26C5009FF81B /* Dump-Z-Prefix.pch */,
+				DFB17EAE157D26C5009FF81B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFB17E9A157D26C5009FF81B /* Dump-Z */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB17EB9157D26C5009FF81B /* Build configuration list for PBXNativeTarget "Dump-Z" */;
+			buildPhases = (
+				DFB17E97157D26C5009FF81B /* Sources */,
+				DFB17E98157D26C5009FF81B /* Frameworks */,
+				DFB17E99157D26C5009FF81B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dump-Z";
+			productName = "Dump-Z";
+			productReference = DFB17E9B157D26C5009FF81B /* Dump-Z.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFB17E92157D26C5009FF81B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DFB17E95157D26C5009FF81B /* Build configuration list for PBXProject "Dump-Z" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFB17E90157D26C5009FF81B;
+			productRefGroup = DFB17E9C157D26C5009FF81B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFB17E9A157D26C5009FF81B /* Dump-Z */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFB17E99157D26C5009FF81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB17EAA157D26C5009FF81B /* InfoPlist.strings in Resources */,
+				DFB17EB0157D26C5009FF81B /* Credits.rtf in Resources */,
+				DFB17EB6157D26C5009FF81B /* MainMenu.xib in Resources */,
+				DF13BB4B157EB63A002C1D9E /* class-dump-z in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFB17E97157D26C5009FF81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB17EAC157D26C5009FF81B /* main.m in Sources */,
+				DFB17EB3157D26C5009FF81B /* AppDelegate.m in Sources */,
+				DFE503A5157D349000C2E055 /* BEDropView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DFB17EA8157D26C5009FF81B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB17EA9157D26C5009FF81B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFB17EAE157D26C5009FF81B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB17EAF157D26C5009FF81B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DFB17EB4157D26C5009FF81B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB17EB5157D26C5009FF81B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFB17EB7157D26C5009FF81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DFB17EB8157D26C5009FF81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DFB17EBA157D26C5009FF81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dump-Z/Dump-Z-Prefix.pch";
+				INFOPLIST_FILE = "Dump-Z/Dump-Z-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFB17EBB157D26C5009FF81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dump-Z/Dump-Z-Prefix.pch";
+				INFOPLIST_FILE = "Dump-Z/Dump-Z-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFB17E95157D26C5009FF81B /* Build configuration list for PBXProject "Dump-Z" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB17EB7157D26C5009FF81B /* Debug */,
+				DFB17EB8157D26C5009FF81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB17EB9157D26C5009FF81B /* Build configuration list for PBXNativeTarget "Dump-Z" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB17EBA157D26C5009FF81B /* Debug */,
+				DFB17EBB157D26C5009FF81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFB17E92157D26C5009FF81B /* Project object */;
+}
