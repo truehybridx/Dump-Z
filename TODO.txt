@@ -1,0 +1,3 @@
+Save Dump location.
+
+Binary named dump folder: i.e. Dumped/UIKit  Dumped/WebKit
