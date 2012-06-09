@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF05307B15821FB900871AE2 /* DropZone.png in Resources */ = {isa = PBXBuildFile; fileRef = DF05307A15821FB900871AE2 /* DropZone.png */; };
 		DF13BB4B157EB63A002C1D9E /* class-dump-z in Resources */ = {isa = PBXBuildFile; fileRef = DF13BB4A157EB63A002C1D9E /* class-dump-z */; };
+		DF9200AE158168C8008078C2 /* BEDumpController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9200AD158168C8008078C2 /* BEDumpController.m */; };
 		DFB17EA0157D26C5009FF81B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB17E9F157D26C5009FF81B /* Cocoa.framework */; };
 		DFB17EAA157D26C5009FF81B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB17EA8157D26C5009FF81B /* InfoPlist.strings */; };
 		DFB17EAC157D26C5009FF81B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB17EAB157D26C5009FF81B /* main.m */; };
@@ -18,7 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF05307A15821FB900871AE2 /* DropZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DropZone.png; sourceTree = "<group>"; };
 		DF13BB4A157EB63A002C1D9E /* class-dump-z */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "class-dump-z"; sourceTree = "<group>"; };
+		DF9200AC158168C8008078C2 /* BEDumpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEDumpController.h; sourceTree = "<group>"; };
+		DF9200AD158168C8008078C2 /* BEDumpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEDumpController.m; sourceTree = "<group>"; };
 		DFB17E9B157D26C5009FF81B /* Dump-Z.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dump-Z.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB17E9F157D26C5009FF81B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DFB17EA2157D26C5009FF81B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +92,7 @@
 		DFB17EA5157D26C5009FF81B /* Dump-Z */ = {
 			isa = PBXGroup;
 			children = (
+				DF05307A15821FB900871AE2 /* DropZone.png */,
 				DF13BB4A157EB63A002C1D9E /* class-dump-z */,
 				DFB17EB1157D26C5009FF81B /* AppDelegate.h */,
 				DFB17EB2157D26C5009FF81B /* AppDelegate.m */,
@@ -94,6 +100,8 @@
 				DFE503A3157D349000C2E055 /* BEDropView.h */,
 				DFE503A4157D349000C2E055 /* BEDropView.m */,
 				DFB17EA6157D26C5009FF81B /* Supporting Files */,
+				DF9200AC158168C8008078C2 /* BEDumpController.h */,
+				DF9200AD158168C8008078C2 /* BEDumpController.m */,
 			);
 			path = "Dump-Z";
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 				DFB17EB0157D26C5009FF81B /* Credits.rtf in Resources */,
 				DFB17EB6157D26C5009FF81B /* MainMenu.xib in Resources */,
 				DF13BB4B157EB63A002C1D9E /* class-dump-z in Resources */,
+				DF05307B15821FB900871AE2 /* DropZone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +186,7 @@
 				DFB17EAC157D26C5009FF81B /* main.m in Sources */,
 				DFB17EB3157D26C5009FF81B /* AppDelegate.m in Sources */,
 				DFE503A5157D349000C2E055 /* BEDropView.m in Sources */,
+				DF9200AE158168C8008078C2 /* BEDumpController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

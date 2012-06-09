@@ -11,5 +11,11 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet NSTextField *destLabel;
+
+-(IBAction)destButtonClicked:(id)sender;
+
+- (void)updateLabel;
+
 
 @end
