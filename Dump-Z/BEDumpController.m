@@ -70,7 +70,18 @@
 - (void)classDumpTheBinary:(NSString*)path
 {
     NSString *binaryName = [self getNameOfBinary:path];
-    NSString *destPath = [NSString stringWithFormat:@"%@%@_Headers", [self getDestinationPath],binaryName];
+    NSString *destPath = [NSString stringWithFormat:@"%@%@", [self getDestinationPath],binaryName];
+    
+    //Check if the directory exists already
+    //If it exists but it's not a directory,
+    //we might be creating the folder in the same folder as the binary
+    //in that case we'll want to add "_Headers" to the directory name
+    NSFileManager *fileMan = [NSFileManager defaultManager];
+    BOOL isDir;
+    if([fileMan fileExistsAtPath:destPath isDirectory:&isDir] && !isDir) {
+        destPath = [destPath stringByAppendingString:@"_Headers"];
+    }
+    
     
     // Build the NSTask
     NSTask *dumpTask = [[NSTask alloc] init];
@@ -100,8 +111,6 @@
     
     
     // Check that Headers directory has been created successfully
-    NSFileManager *fileMan = [NSFileManager defaultManager];
-    BOOL isDir;
     if ([fileMan fileExistsAtPath:destPath isDirectory:&isDir] && isDir) {
         // Directory exists, assume it was successful
         [self alertTaskCompleted:destPath];
