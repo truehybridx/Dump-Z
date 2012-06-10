@@ -74,7 +74,7 @@
     NSURL *urlFromPasteboard = [NSURL URLFromPasteboard:zPasteboard];
     
     BEDumpController *dumpController = [[BEDumpController alloc] init];
-    NSString* pathString = [dumpController removeFilePrefixFromString:[urlFromPasteboard absoluteString]] ;
+    NSString* pathString = [urlFromPasteboard path];
     
     // Start processing the given file
     // [self processFileAtPath:pathString];
