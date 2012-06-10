@@ -15,10 +15,24 @@
 // Then preform dump
 -(void)processFileAtPath:(NSString *)path;
 
+// Alerts to the user
+// A bad object has been dropped (Directory, Mac App Bundle, Cydia)
+- (void)alertBadPath;
+
+// By now, path needs to be to the binary
+- (void)classDumpTheBinary:(NSString*)path;
+
+// Prompts user for a destination UNLESS one has previously been set
+// Implement Saving destination later
+-(NSString*)getDestinationPath;
+
+// Checks to see if path goes to a Binary or an App bundle
+-(NSString*)getFullBinaryPath:(NSString*)path;
+
+// Gets the Binary name to use for destination folder (to organize things)
+-(NSString *)getNameOfBinary:(NSString*)path;
 
 // Removed the URL prefix from dropped paths (yes its a class method)
 -(NSString *)removeFilePrefixFromString:(NSString*)string;
-
-
 
 @end
