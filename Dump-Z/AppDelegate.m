@@ -49,7 +49,6 @@
 
 -(IBAction)destButtonClicked:(id)sender
 {
-    NSLog(@"Dest Button Clicked");
     NSUserDefaults *appSettings = [NSUserDefaults standardUserDefaults];
     
     // Prompt the user for a destination directory.
@@ -59,7 +58,7 @@
     [destinationPanel setCanCreateDirectories:YES];
     [destinationPanel runModal];
     
-    NSString *destinationPath = [dumpController removeFilePrefixFromString:[[destinationPanel URLs].lastObject absoluteString]];
+    NSString *destinationPath = [destinationPanel.URLs.lastObject path];
     
     [appSettings setObject:destinationPath forKey:@"savedDestination"];
     [appSettings synchronize];
